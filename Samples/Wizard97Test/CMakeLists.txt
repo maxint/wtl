@@ -1,0 +1,6 @@
+set(NAME Wizard97Test)
+file(GLOB_RECURSE SRCS *)
+add_executable(${NAME} WIN32 ${SRCS})
+target_include_directories(${NAME} PUBLIC ../../Include ${CMAKE_CURRENT_BINARY_DIR} .)
+target_compile_definitions(${NAME} PUBLIC _AFXDLL _UNICODE UNICODE _EMBEDDED_MANIFEST)
+target_link_libraries(${NAME} shlwapi.lib HtmlHelp.lib)

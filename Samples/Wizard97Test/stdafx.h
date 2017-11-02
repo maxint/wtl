@@ -13,9 +13,9 @@
 #define STRICT
 #endif
 
-#define WINVER        0x0500
-#define _WIN32_WINNT  0x0500  // Require Windows 2000 or later
-#define _WIN32_IE     0x0501  // Require IE 5.01 or later (comes with Windows 2000 or later)
+#define WINVER        0x0603 // 0x0500
+#define _WIN32_WINNT  0x0603  // Require Windows 2000 or later
+#define _WIN32_IE     0x0603  // Require IE 5.01 or later (comes with Windows 2000 or later)
 #define _RICHEDIT_VER 0x0300  // Require RichEdit 3.0 or later (comes with Windows 2000 or later)
 
 // ATL related preprocessor definitions

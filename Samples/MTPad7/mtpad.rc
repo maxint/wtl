@@ -27,18 +27,18 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 // TEXTINCLUDE
 //
 
-1 TEXTINCLUDE 
+1 TEXTINCLUDE
 BEGIN
     "resource.h\0"
 END
 
-2 TEXTINCLUDE 
+2 TEXTINCLUDE
 BEGIN
     "#include ""atlres.h""\r\n"
     "#include ""MTPadRibbon.h\0"
 END
 
-3 TEXTINCLUDE 
+3 TEXTINCLUDE
 BEGIN
     "#include ""MTPadRibbon.rc\0"
 END
@@ -57,7 +57,7 @@ CAPTION "About MTPad"
 FONT 9, "Segoe UI", 0, 0, 0x0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,130,81,50,14
-    CTEXT           "MTPad v7.0\nRibbon enabled\nMultithreaded Notepad Sample\n©  2010",IDC_STATIC,13,51,104,38
+    CTEXT           "MTPad v7.0\nRibbon enabled\nMultithreaded Notepad Sample\n? 2010",IDC_STATIC,13,51,104,38
     ICON            IDR_MAINFRAME,IDC_STATIC,55,26,20,20
     GROUPBOX        "",IDC_STATIC,7,7,115,88
 END
@@ -69,7 +69,7 @@ END
 //
 
 #ifdef APSTUDIO_INVOKED
-GUIDELINES DESIGNINFO 
+GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTDLG, DIALOG
     BEGIN
@@ -87,7 +87,7 @@ END
 // Accelerator
 //
 
-IDR_MAINFRAME ACCELERATORS 
+IDR_MAINFRAME ACCELERATORS
 BEGIN
     "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
     "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
@@ -127,7 +127,7 @@ IDR_TEXTTYPE            ICON                    "res\\MTPadDoc.ico"
 // Menu
 //
 
-IDR_CONTEXTMENU MENU 
+IDR_CONTEXTMENU MENU
 BEGIN
     POPUP "Popup Menu"
     BEGIN
@@ -142,7 +142,7 @@ BEGIN
     END
 END
 
-IDR_MAINFRAME MENU 
+IDR_MAINFRAME MENU
 BEGIN
     POPUP "&File"
     BEGIN
@@ -271,7 +271,7 @@ BEGIN
             VALUE "FileDescription", "MTPad7 WTL Application"
             VALUE "FileVersion", "7, 0, 0, 1"
             VALUE "InternalName", "MTPad7"
-            VALUE "LegalCopyright", "Copyright © Microsoft 1998-2010"
+            VALUE "LegalCopyright", "Copyright ?Microsoft 1998-2010"
             VALUE "OriginalFilename", "MTPad.EXE"
             VALUE "ProductName", "MTPad7 Application"
             VALUE "ProductVersion", "7, 0, 0, 1"
@@ -289,12 +289,12 @@ END
 // String Table
 //
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     IDR_MAINFRAME           "MTPad v7.0"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_NEW             "Create a new document\nNew"
     ID_FILE_OPEN            "Open an existing document\nOpen"
@@ -307,24 +307,24 @@ BEGIN
     ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
     ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
     ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_CLEAR           "Erase the selection\nErase"
     ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
@@ -339,14 +339,14 @@ BEGIN
     ID_EDIT_REDO            "Redo the previously undone action\nRedo"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
     ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
     ID_VIEW_RIBBON          "Show or hide the ribbon\nToggle Ribbon"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ATL_IDS_SCSIZE          "Change the window size"
     ATL_IDS_SCMOVE          "Change the window position"
@@ -357,28 +357,28 @@ BEGIN
     ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ATL_IDS_SCRESTORE       "Restore the window to normal size"
     ATL_IDS_SCTASKLIST      "Activate Task List"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FILE_NEW_WINDOW      "Open a new window\nNew Window"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_FORMAT_FONT          "Set text font\nSet Font"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ID_EDIT_WORD_WRAP       "Toggle word wrap mode\nWord Wrap"
 END
 
-STRINGTABLE 
+STRINGTABLE
 BEGIN
     ATL_IDS_MRU_FILE        "Open this document"
     ID_ROW_PANE             "Row: 99999"

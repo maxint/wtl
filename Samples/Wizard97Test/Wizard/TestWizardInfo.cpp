@@ -403,7 +403,7 @@ void CTestWizardInfo::ShowContextHelp(LPHELPINFO helpInfo)
 
 	::lstrcat(helpFileLink, _T("::/Context.txt"));
 
-	DWORD idList[3] = { helpInfo->iCtrlId, (DWORD)helpInfo->dwContextId, 0};
+	DWORD idList[3] = { (DWORD)helpInfo->iCtrlId, (DWORD)helpInfo->dwContextId, 0};
 
 	// For more control on the appearance, we could use HH_DISPLAY_TEXT_POPUP
 	HWND hWndHelp = ::HtmlHelp((HWND)helpInfo->hItemHandle, helpFileLink, HH_TP_HELP_WM_HELP, (DWORD_PTR)idList);
@@ -508,7 +508,7 @@ bool CTestWizardInfo::FinishWizard_SendEMail(HWND hWndParent)
 			ULONG result = pfnMAPISendMail(NULL, NULL, &message, MAPI_DIALOG, 0);
 			success = (result == SUCCESS_SUCCESS) || (result == MAPI_USER_ABORT);
 		}
-		
+
 		::FreeLibrary(hMapi);
 		hMapi = NULL;
 	}

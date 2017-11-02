@@ -1,4 +1,3 @@
-
 #include "stdafx.h"
 #include "TestWizardCompletionPage.h"
 
@@ -60,10 +59,10 @@ void CTestWizardCompletionPage::UpdateSummary(void)
 	CString text;
 	text.Format(
 		_T("Test Wizard: \r\n")
-		_T("· Find files in the directory:\r\n")
+		_T("?Find files in the directory:\r\n")
 		_T("\t%s\r\n")
-		_T("· %s\r\n")
-		_T("· Find files matching the filter '%s'\r\n"),
+		_T("?%s\r\n")
+		_T("?Find files matching the filter '%s'\r\n"),
 		path,
 		recurse ? _T("Also search sub-directories") : _T("Only search that directory"),
 		filter);
@@ -73,8 +72,8 @@ void CTestWizardCompletionPage::UpdateSummary(void)
 	switch(outputType)
 	{
 	case eOutput_SendEMail:
-		outputDescription = 
-			_T("· Send the file list in an e-mail\r\n")
+		outputDescription =
+			_T("?Send the file list in an e-mail\r\n")
 			_T("  (using the default mail client)\r\n");
 		break;
 	case eOutput_SaveToFile:
@@ -83,7 +82,7 @@ void CTestWizardCompletionPage::UpdateSummary(void)
 			TestWizardOutputFileEncoding outputFileEncoding = m_pTestWizardInfo->GetOutputFileEncoding();
 
 			outputDescription.Format(
-				_T("· Save the file list to the file:\r\n")
+				_T("?Save the file list to the file:\r\n")
 				_T("\t%s\r\n"),
 				outputFileName);
 			switch(outputFileEncoding)
@@ -102,7 +101,7 @@ void CTestWizardCompletionPage::UpdateSummary(void)
 		break;
 	case eOutput_Clipboard:
 	default:
-		outputDescription = _T("· Copy the file list to the clipboard\r\n");
+		outputDescription = _T("?Copy the file list to the clipboard\r\n");
 		break;
 	}
 	m_editSummary.AppendText(outputDescription);
